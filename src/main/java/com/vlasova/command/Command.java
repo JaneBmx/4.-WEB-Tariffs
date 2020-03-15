@@ -39,7 +39,7 @@ public class Command {
             TariffsBuilder builder = tariffsBuilderFactory.createTariffsBuilder(parser);
             builder.buildTariffs(formedPath);
 
-            Set<Tariff> tariffs = builder.getTariffs();
+            //Set<Tariff> tariffs = builder.getTariffs();
             List<Tariff> list = new ArrayList<>(tariffs);
             request.setAttribute("list", list);
         } else {
