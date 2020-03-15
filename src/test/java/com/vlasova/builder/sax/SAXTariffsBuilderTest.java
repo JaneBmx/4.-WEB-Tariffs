@@ -1,7 +1,7 @@
-package com.vlasova.parser.sax;
+package com.vlasova.builder.sax;
 
 import com.vlasova.entity.Tariff;
-import com.vlasova.parser.TariffsBuilderTestData;
+import com.vlasova.builder.TariffsBuilderTestData;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class TariffsSAXBuilderTest {
+public class SAXTariffsBuilderTest {
     @Test
     public void buildTariffs() {
-        TariffsSAXBuilder sax = new TariffsSAXBuilder();
+        SAXTariffsBuilder sax = new SAXTariffsBuilder();
         sax.buildTariffs(TariffsBuilderTestData.FILE_NAME);
         Set<Tariff> result = sax.getTariffs();
         List<Tariff> list = new ArrayList<>(result);

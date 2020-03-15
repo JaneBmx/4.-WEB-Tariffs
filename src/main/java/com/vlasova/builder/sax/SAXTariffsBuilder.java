@@ -1,6 +1,6 @@
-package com.vlasova.parser.sax;
+package com.vlasova.builder.sax;
 
-import com.vlasova.parser.TariffsBuilder;
+import com.vlasova.builder.TariffsBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
@@ -12,12 +12,12 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 
-public class TariffsSAXBuilder extends TariffsBuilder {
-    private static final Logger LOGGER = LogManager.getLogger(TariffsSAXBuilder.class);
+public class SAXTariffsBuilder extends TariffsBuilder {
+    private static final Logger LOGGER = LogManager.getLogger(SAXTariffsBuilder.class);
     private TariffHandler handler = new TariffHandler();
     private XMLReader reader;
 
-    public TariffsSAXBuilder() {
+    public SAXTariffsBuilder() {
         SAXParserFactory parserFactory = SAXParserFactory.newInstance();
         try {
             parserFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);

@@ -1,4 +1,6 @@
-package com.vlasova.servlet;
+package com.vlasova.controller;
+
+import com.vlasova.command.Command;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;

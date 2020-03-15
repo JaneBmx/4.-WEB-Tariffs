@@ -1,4 +1,4 @@
-package com.vlasova.parser.sax;
+package com.vlasova.builder.sax;
 
 import com.vlasova.entity.Billing;
 import com.vlasova.entity.Tariff;

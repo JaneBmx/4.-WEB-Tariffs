@@ -1,9 +1,9 @@
-package com.vlasova.parser.dom;
+package com.vlasova.builder.dom;
 
 import com.vlasova.entity.Billing;
 import com.vlasova.entity.Tariff;
 import com.vlasova.entity.TariffTag;
-import com.vlasova.parser.TariffsBuilder;
+import com.vlasova.builder.TariffsBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
@@ -18,11 +18,11 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 
-public class TariffsDOMBuilder extends TariffsBuilder {
-    private static final Logger LOGGER = LogManager.getLogger(TariffsDOMBuilder.class);
+public class DOMTariffsBuilder extends TariffsBuilder {
+    private static final Logger LOGGER = LogManager.getLogger(DOMTariffsBuilder.class);
     private DocumentBuilder docBuilder;
 
-    public TariffsDOMBuilder() {
+    public DOMTariffsBuilder() {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
             factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
@@ -46,15 +46,14 @@ public class TariffsDOMBuilder extends TariffsBuilder {
                 tariffs.add(tariff);
             }
         } catch (IOException e) {
-            LOGGER.warn("File error or IO error");
+            LOGGER.warn("File error or IO error", e);
         } catch (SAXException e) {
-            LOGGER.warn("Parsing failure");
+            LOGGER.warn("Parsing failure", e);
         }
     }
 
     private Tariff buildTariff(Element tariffElement) {
         Tariff tariff = new Tariff();
-
         int id = Integer.parseInt(tariffElement.getAttribute(TariffTag.ID.toTag()));
         String tariffName = getElementTextContext(tariffElement, TariffTag.TARIFF_NAME.toTag());
         String operatorName = getElementTextContext(tariffElement, TariffTag.OPERATOR_NAME.toTag());
@@ -92,8 +91,8 @@ public class TariffsDOMBuilder extends TariffsBuilder {
     }
 
     private static String getElementTextContext(Element element, String elementName) {
-        NodeList nList = element.getElementsByTagName(elementName);
-        Node node = nList.item(0);
+        NodeList nodeList = element.getElementsByTagName(elementName);
+        Node node = nodeList.item(0);
         return node.getTextContent();
     }
 }

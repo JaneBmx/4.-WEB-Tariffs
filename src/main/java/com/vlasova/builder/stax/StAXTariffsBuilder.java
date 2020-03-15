@@ -1,7 +1,7 @@
-package com.vlasova.parser.stax;
+package com.vlasova.builder.stax;
 
 import com.vlasova.entity.*;
-import com.vlasova.parser.TariffsBuilder;
+import com.vlasova.builder.TariffsBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,8 +13,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class TariffsStAXBuilder extends TariffsBuilder {
-    private static final Logger LOGGER = LogManager.getLogger(TariffsStAXBuilder.class);
+public class StAXTariffsBuilder extends TariffsBuilder {
+    private static final Logger LOGGER = LogManager.getLogger(StAXTariffsBuilder.class);
     private static final String TARIFF = "tariff";
     private XMLInputFactory inputFactory = XMLInputFactory.newInstance();
 
@@ -37,6 +37,7 @@ public class TariffsStAXBuilder extends TariffsBuilder {
             }
         } catch (XMLStreamException e) {
             LOGGER.warn("StAX parser exception");
+            //TODO throw own exc
         } catch (FileNotFoundException e) {
             LOGGER.warn("File not found");
         } catch (IOException e) {
@@ -45,8 +46,8 @@ public class TariffsStAXBuilder extends TariffsBuilder {
     }
 
     private Tariff buildTariff(XMLStreamReader reader) throws XMLStreamException {
-        Tariff current = new Tariff();
-        current.setId(Integer.parseInt(reader.getAttributeValue(null, TariffTag.ID.toTag())));
+        Tariff currentTariff = new Tariff();
+        currentTariff.setId(Integer.parseInt(reader.getAttributeValue(null, TariffTag.ID.toTag())));
         String name;
         int type;
         while (reader.hasNext()) {
@@ -55,22 +56,22 @@ public class TariffsStAXBuilder extends TariffsBuilder {
                 name = reader.getLocalName();
                 switch (TariffTag.valueOf(TariffTag.toEnumFormat(name))) {
                     case TARIFF_NAME:
-                        current.setName(getXMLText(reader));
+                        currentTariff.setName(getXMLText(reader));
                         break;
                     case OPERATOR_NAME:
-                        current.setOperatorName(getXMLText(reader));
+                        currentTariff.setOperatorName(getXMLText(reader));
                         break;
                     case PAYROLL:
-                        current.setPayroll(Integer.parseInt(getXMLText(reader)));
+                        currentTariff.setPayroll(Integer.parseInt(getXMLText(reader)));
                         break;
                     case CALL_PRICES:
-                        current.setCallPrices(getXMLCallPrices(reader));
+                        currentTariff.setCallPrices(getXMLCallPrices(reader));
                         break;
                     case SMS_PRICES:
-                        current.setSmsPrice(getXMLSmsPrices(reader));
+                        currentTariff.setSmsPrice(getXMLSmsPrices(reader));
                         break;
                     case PARAMETERS:
-                        current.setParameters(getXMLParameters(reader));
+                        currentTariff.setParameters(getXMLParameters(reader));
                         break;
                     default:
                 }
@@ -78,7 +79,7 @@ public class TariffsStAXBuilder extends TariffsBuilder {
             if (type == XMLStreamConstants.END_ELEMENT) {
                 name = reader.getLocalName();
                 if (TARIFF.equals(name)) {
-                    return current;
+                    return currentTariff;
                 }
             }
         }

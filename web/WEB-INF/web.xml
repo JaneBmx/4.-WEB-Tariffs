@@ -12,7 +12,7 @@
 
     <servlet>
         <servlet-name>controller</servlet-name>
-        <servlet-class>com.vlasova.servlet.Controller</servlet-class>
+        <servlet-class>com.vlasova.controller.Controller</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>controller</servlet-name>

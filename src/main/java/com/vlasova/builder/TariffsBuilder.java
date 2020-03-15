@@ -1,4 +1,4 @@
-package com.vlasova.parser;
+package com.vlasova.builder;
 
 import com.vlasova.entity.Tariff;
 

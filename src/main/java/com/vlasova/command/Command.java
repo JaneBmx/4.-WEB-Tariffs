@@ -1,21 +1,18 @@
-package com.vlasova.servlet;
+package com.vlasova.command;
 
 import com.vlasova.entity.Tariff;
-import com.vlasova.parser.TariffsBuilder;
-import com.vlasova.parser.TariffsFactory;
-import com.vlasova.validator.XMLValidator;
+import com.vlasova.builder.TariffsBuilder;
+import com.vlasova.builder.TariffsFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.Part;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
 public class Command {
+    //private static final Logger LOGGER = LogManager.getLogger(Command.class);
     private static final String SAX = "SAX";
     private static final String DOM = "DOM";
     private static final String STAX = "STAX";

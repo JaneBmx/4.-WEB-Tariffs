@@ -1,8 +1,8 @@
-package com.vlasova.parser;
+package com.vlasova.builder;
 
-import com.vlasova.parser.dom.TariffsDOMBuilder;
-import com.vlasova.parser.sax.TariffsSAXBuilder;
-import com.vlasova.parser.stax.TariffsStAXBuilder;
+import com.vlasova.builder.dom.DOMTariffsBuilder;
+import com.vlasova.builder.sax.SAXTariffsBuilder;
+import com.vlasova.builder.stax.StAXTariffsBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,13 +14,13 @@ public class TariffsFactory {
         LOGGER.info("Preparing parser");
         switch (type) {
             case "DOM":
-                return new TariffsDOMBuilder();
+                return new DOMTariffsBuilder();
             case "SAX":
-                return new TariffsSAXBuilder();
+                return new SAXTariffsBuilder();
             case "STAX":
             default:
                 LOGGER.info("Unknown parserType. Will be use default");
-                return new TariffsStAXBuilder();
+                return new StAXTariffsBuilder();
         }
     }
 }
