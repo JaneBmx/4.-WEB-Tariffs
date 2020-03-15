@@ -1,5 +1,6 @@
-package com.vlasova.builder;
+package com.vlasova.factory;
 
+import com.vlasova.builder.TariffsBuilder;
 import com.vlasova.builder.dom.DOMTariffsBuilder;
 import com.vlasova.builder.sax.SAXTariffsBuilder;
 import com.vlasova.builder.stax.StAXTariffsBuilder;
@@ -19,7 +20,7 @@ public class TariffsFactory {
                 return new SAXTariffsBuilder();
             case "STAX":
             default:
-                LOGGER.info("Unknown parserType. Will be use default");
+                LOGGER.info("Unknown parserType. Will be used default");
                 return new StAXTariffsBuilder();
         }
     }

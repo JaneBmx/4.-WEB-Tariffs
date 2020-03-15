@@ -1,5 +1,6 @@
 package com.vlasova.builder.stax;
 
+import com.vlasova.builder.TariffTag;
 import com.vlasova.entity.*;
 import com.vlasova.builder.TariffsBuilder;
 import org.apache.logging.log4j.LogManager;

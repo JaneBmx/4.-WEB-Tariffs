@@ -2,7 +2,7 @@ package com.vlasova.builder.sax;
 
 import com.vlasova.entity.Billing;
 import com.vlasova.entity.Tariff;
-import com.vlasova.entity.TariffTag;
+import com.vlasova.builder.TariffTag;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 

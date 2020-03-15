@@ -2,17 +2,18 @@ package com.vlasova.builder;
 
 import com.vlasova.entity.Tariff;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 public abstract class TariffsBuilder {
-    protected Set<Tariff> tariffs;
+    protected static final int START_INDEX = 0;
+    protected List<Tariff> tariffs;
 
     public TariffsBuilder() {
-        tariffs = new HashSet<>();
+        tariffs = new ArrayList<>();
     }
 
-    public Set<Tariff> getTariffs() {
+    public List<Tariff> getTariffs() {
         return tariffs;
     }
 

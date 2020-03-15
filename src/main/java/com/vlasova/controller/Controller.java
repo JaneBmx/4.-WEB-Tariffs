@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/Controller")
+@WebServlet("/controller")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024)
 public class Controller extends HttpServlet {
     @Override

@@ -2,7 +2,7 @@ package com.vlasova.builder.dom;
 
 import com.vlasova.entity.Billing;
 import com.vlasova.entity.Tariff;
-import com.vlasova.entity.TariffTag;
+import com.vlasova.builder.TariffTag;
 import com.vlasova.builder.TariffsBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

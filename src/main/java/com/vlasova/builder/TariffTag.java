@@ -1,4 +1,4 @@
-package com.vlasova.entity;
+package com.vlasova.builder;
 
 public enum TariffTag {
     BILLING("billing"),

@@ -1,7 +1,7 @@
 package com.vlasova.runner;
 
 import com.vlasova.builder.TariffsBuilder;
-import com.vlasova.builder.TariffsFactory;
+import com.vlasova.factory.TariffsFactory;
 
 public class Main {
     public static void main(String[] args) {
