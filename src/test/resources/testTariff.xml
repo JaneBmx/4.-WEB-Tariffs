@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tariffs xmls="http://www.example.com/tariffs">
+    <tariff id="1">
+        <tariff-name>Bezlimitishe</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>999</payroll>
+        <call-prices>
+            <call-price-inside-the-network>1</call-price-inside-the-network>
+            <call-price-outside-the-network>2</call-price-outside-the-network>
+            <call-price-to-stationary-phone>3</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>4</sms-price-inside-the-network>
+            <sms-price-outside-the-network>5</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>6</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+</tariffs>

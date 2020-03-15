@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tariffs xmls="http://www.example.com/tariffs">
+    <tariff id="1">
+        <tariff-name>Bezlimitishe</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>17</payroll>
+        <call-prices>
+            <call-price-inside-the-network>1</call-price-inside-the-network>
+            <call-price-outside-the-network>2</call-price-outside-the-network>
+            <call-price-to-stationary-phone>3</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>4</sms-price-inside-the-network>
+            <sms-price-outside-the-network>5</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>6</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="2">
+        <tariff-name>YO1200</tariff-name>
+        <operator-name>Life</operator-name>
+        <payroll>10</payroll>
+        <call-prices>
+            <call-price-inside-the-network>3</call-price-inside-the-network>
+            <call-price-outside-the-network>2</call-price-outside-the-network>
+            <call-price-to-stationary-phone>1</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>4</sms-price-inside-the-network>
+            <sms-price-outside-the-network>5</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>6</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>10</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="3">
+        <tariff-name>Privet</tariff-name>
+        <operator-name>Velcom</operator-name>
+        <payroll>12</payroll>
+        <call-prices>
+            <call-price-inside-the-network>7</call-price-inside-the-network>
+            <call-price-outside-the-network>5</call-price-outside-the-network>
+            <call-price-to-stationary-phone>4</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>4</sms-price-inside-the-network>
+            <sms-price-outside-the-network>8</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>8</number-of-the-favorite-numbers>
+            <billing>twenty_seconds</billing>
+            <fee-connection>1000</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="4">
+        <tariff-name>Legko skazat'</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>9</payroll>
+        <call-prices>
+            <call-price-inside-the-network>5</call-price-inside-the-network>
+            <call-price-outside-the-network>9</call-price-outside-the-network>
+            <call-price-to-stationary-phone>1</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>1</sms-price-inside-the-network>
+            <sms-price-outside-the-network>4</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>5</number-of-the-favorite-numbers>
+            <billing>twenty_seconds</billing>
+            <fee-connection>1</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="5">
+        <tariff-name>Komfort</tariff-name>
+        <operator-name>Velcome</operator-name>
+        <payroll>10</payroll>
+        <call-prices>
+            <call-price-inside-the-network>3</call-price-inside-the-network>
+            <call-price-outside-the-network>6</call-price-outside-the-network>
+            <call-price-to-stationary-phone>3</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>7</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>0</number-of-the-favorite-numbers>
+            <billing>twenty_seconds</billing>
+            <fee-connection>6</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="6">
+        <tariff-name>Very dark</tariff-name>
+        <operator-name>Tele2</operator-name>
+        <payroll>399</payroll>
+        <call-prices>
+            <call-price-inside-the-network>5</call-price-inside-the-network>
+            <call-price-outside-the-network>8</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>6</sms-price-inside-the-network>
+            <sms-price-outside-the-network>9</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>2</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>950</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="7">
+        <tariff-name>Unlim</tariff-name>
+        <operator-name>Velcom</operator-name>
+        <payroll>2</payroll>
+        <call-prices>
+            <call-price-inside-the-network>1</call-price-inside-the-network>
+            <call-price-outside-the-network>2</call-price-outside-the-network>
+            <call-price-to-stationary-phone>3</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>8</sms-price-inside-the-network>
+            <sms-price-outside-the-network>8</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>8</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>3</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="8">
+        <tariff-name>Bezlimit</tariff-name>
+        <operator-name>Life</operator-name>
+        <payroll>1099</payroll>
+        <call-prices>
+            <call-price-inside-the-network>10</call-price-inside-the-network>
+            <call-price-outside-the-network>10</call-price-outside-the-network>
+            <call-price-to-stationary-phone>10</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>10</sms-price-inside-the-network>
+            <sms-price-outside-the-network>10</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>10</number-of-the-favorite-numbers>
+            <billing>twenty_seconds</billing>
+            <fee-connection>10</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="9">
+        <tariff-name>Bezlimitishe 2.0</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>3</payroll>
+        <call-prices>
+            <call-price-inside-the-network>8</call-price-inside-the-network>
+            <call-price-outside-the-network>7</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>1</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>3</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="10">
+        <tariff-name>Start</tariff-name>
+        <operator-name>Velcom</operator-name>
+        <payroll>2</payroll>
+        <call-prices>
+            <call-price-inside-the-network>1</call-price-inside-the-network>
+            <call-price-outside-the-network>1</call-price-outside-the-network>
+            <call-price-to-stationary-phone>1</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>1</sms-price-inside-the-network>
+            <sms-price-outside-the-network>9</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>12</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>4</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="11">
+        <tariff-name>Bezlimitishe 3.0</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>3</payroll>
+        <call-prices>
+            <call-price-inside-the-network>8</call-price-inside-the-network>
+            <call-price-outside-the-network>7</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>1</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>3</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="12">
+        <tariff-name>Bezlimitishe 4.0</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>3</payroll>
+        <call-prices>
+            <call-price-inside-the-network>8</call-price-inside-the-network>
+            <call-price-outside-the-network>7</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>1</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>3</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="13">
+        <tariff-name>Bezlimitishe 5.0</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>3</payroll>
+        <call-prices>
+            <call-price-inside-the-network>8</call-price-inside-the-network>
+            <call-price-outside-the-network>7</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>1</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>3</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="14">
+        <tariff-name>Bezlimitishe 6.0</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>3</payroll>
+        <call-prices>
+            <call-price-inside-the-network>8</call-price-inside-the-network>
+            <call-price-outside-the-network>7</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>1</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>3</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="15">
+        <tariff-name>Bezlimitishe 7.0</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>3</payroll>
+        <call-prices>
+            <call-price-inside-the-network>8</call-price-inside-the-network>
+            <call-price-outside-the-network>7</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>1</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>3</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="16">
+        <tariff-name>Bezlimitishe 8.0</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>3</payroll>
+        <call-prices>
+            <call-price-inside-the-network>8</call-price-inside-the-network>
+            <call-price-outside-the-network>7</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>1</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>3</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+
+    <tariff id="17">
+        <tariff-name>Bezlimitishe 9.0</tariff-name>
+        <operator-name>MTS</operator-name>
+        <payroll>3</payroll>
+        <call-prices>
+            <call-price-inside-the-network>8</call-price-inside-the-network>
+            <call-price-outside-the-network>7</call-price-outside-the-network>
+            <call-price-to-stationary-phone>15</call-price-to-stationary-phone>
+        </call-prices>
+        <sms-prices>
+            <sms-price-inside-the-network>2</sms-price-inside-the-network>
+            <sms-price-outside-the-network>1</sms-price-outside-the-network>
+        </sms-prices>
+        <parameters>
+            <number-of-the-favorite-numbers>3</number-of-the-favorite-numbers>
+            <billing>minute</billing>
+            <fee-connection>7</fee-connection>
+        </parameters>
+    </tariff>
+</tariffs>

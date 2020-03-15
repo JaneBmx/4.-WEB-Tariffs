@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/tariffs"
+        xmlns:tns="http://www.example.com/tariffs"
+        elementFormDefault="qualified">
+<!-- Tariff -->
+    <element name="tariffs">
+        <complexType>
+            <sequence>
+                <element ref="tns:tariff"
+                         minOccurs="16"
+                         maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="tariff" type="tns:Tariff"/>
+<!-- Tariff -->
+    <complexType name="Tariff">
+        <sequence>
+            <element name="tariff-name" type="string"/>
+            <element name="operator-name" type="string"/>
+            <element name="payroll" type="positiveInteger"/>
+            <element name="call-prices" type="tns:CallPrices"/>
+            <element name="sms-price" type="tns:SmsPrice"/>
+            <element name="parameters" type="tns:Parameters"/>
+        </sequence>
+        <attribute name="id" use="required">
+            <simpleType>
+                <restriction base="ID">
+                    <pattern value="\\d+"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+<!-- Call prices -->
+    <complexType name="CallPrices">
+        <sequence>
+            <element name="call-price-inside-the-network" type="positiveInteger"/>
+            <element name="call-price-outside-the-network" type="positiveInteger"/>
+            <element name="call-price-to-stationary-phone" type="positiveInteger"/>
+        </sequence>
+    </complexType>
+<!-- SMS prices -->
+    <complexType name="SmsPrice">
+        <sequence>
+            <element name="sms-price-inside-the-network" type="positiveInteger"/>
+            <element name="sms-price-outside-the-network" type="positiveInteger"/>
+        </sequence>
+    </complexType>
+<!-- Parameters -->
+    <complexType name="Parameters">
+        <sequence>
+            <element name="number-of-the-favorite-numbers" type="positiveInteger"/>
+            <element name="billing" type="tns:Tariffing"/>
+            <element name="fee-connection" type="positiveInteger"/>
+        </sequence>
+    </complexType>
+<!-- Tariffing -->
+    <simpleType name="Tariffing">
+        <restriction base="string">
+            <enumeration value="minute"/>
+            <enumeration value="twentySeconds"/>
+        </restriction>
+    </simpleType>
+</schema>
