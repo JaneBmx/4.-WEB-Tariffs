@@ -15,7 +15,7 @@
 </head>
 <body>
 <form action="Controller" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="command" value="parse"/>
+    <input type="hidden" name="parsingCommand" value="parse"/>
     <input type="file" name="file" id="upload" accept=".xml"/><br/>
     <br>
     <label> Введите парсер(DOM, SAX, StAX) :
