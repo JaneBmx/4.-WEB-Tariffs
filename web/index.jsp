@@ -14,7 +14,7 @@
     </title>
 </head>
 <body>
-<form action="Controller" method="POST" enctype="multipart/form-data">
+<form action="controller" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="parsingCommand" value="parse"/>
     <input type="file" name="file" id="upload" accept=".xml"/><br/>
     <br>

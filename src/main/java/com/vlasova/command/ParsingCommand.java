@@ -17,7 +17,7 @@ import javax.servlet.http.Part;
 import java.util.List;
 
 public class ParsingCommand {
-    private static final Logger LOGGER = LogManager.getLogger(ParsingCommand.class);
+ //   private static final Logger LOGGER = LogManager.getLogger(ParsingCommand.class);
     private static final String SAX = "SAX";
     private static final String DOM = "DOM";
     private static final String STAX = "STAX";
@@ -43,7 +43,7 @@ public class ParsingCommand {
 
             page = PageEnum.RESULT.getValue();
         } catch (Exception e) {
-            LOGGER.warn("Smth went wrong with parser.");
+           // LOGGER.warn("Smth went wrong with parser.");
             page = PageEnum.ERROR.getValue();
         }
         return page;
@@ -56,7 +56,7 @@ public class ParsingCommand {
             formedPath = appPath + File.separator + part.getSubmittedFileName();
             part.write(formedPath);
         } else {
-            LOGGER.error("No xml file");
+           // LOGGER.error("No xml file");
         }
         return formedPath;
     }

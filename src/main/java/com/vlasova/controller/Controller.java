@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/controller")
+@WebServlet(urlPatterns = "/controller")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024)
 public class Controller extends HttpServlet {
     @Override
@@ -27,5 +27,8 @@ public class Controller extends HttpServlet {
         ParsingCommand parsingCommand = new ParsingCommand();
         String page = parsingCommand.execute(request, response);
         request.getRequestDispatcher(page).forward(request, response);
+       // response.sendRedirect("/XMLParser_war_exploded" + page);
+
+
     }
 }

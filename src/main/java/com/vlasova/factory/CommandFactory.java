@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CommandFactory {
-    private static final Logger LOGGER = LogManager.getLogger(CommandFactory.class);
+    //private static final Logger LOGGER = LogManager.getLogger(CommandFactory.class);
 
     public TariffsBuilder createCommand(String typeParser) {
         String type = typeParser.toUpperCase();
@@ -20,7 +20,7 @@ public class CommandFactory {
             case "STAX":
                 return new StAXTariffsBuilder();
             default:
-                LOGGER.info("Unknown parserType. Will be used default");
+                //LOGGER.info("Unknown parserType. Will be used default");
                 return new DOMTariffsBuilder();
         }
     }
