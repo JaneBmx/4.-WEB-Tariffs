@@ -14,7 +14,7 @@ public class DOMTariffsBuilderTest {
     public void buildTariffs() {
         DOMTariffsBuilder dom = new DOMTariffsBuilder();
         dom.buildTariffs(TariffsBuilderTestData.FILE_NAME);
-        Set<Tariff> result = dom.getTariffs();
+        List<Tariff> result = dom.getTariffs();
         List<Tariff> list = new ArrayList<>(result);
         Assert.assertEquals(list.get(0), TariffsBuilderTestData.TARIFF);
     }

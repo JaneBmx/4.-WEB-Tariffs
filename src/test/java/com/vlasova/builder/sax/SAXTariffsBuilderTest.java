@@ -14,7 +14,7 @@ public class SAXTariffsBuilderTest {
     public void buildTariffs() {
         SAXTariffsBuilder sax = new SAXTariffsBuilder();
         sax.buildTariffs(TariffsBuilderTestData.FILE_NAME);
-        Set<Tariff> result = sax.getTariffs();
+        List<Tariff> result = sax.getTariffs();
         List<Tariff> list = new ArrayList<>(result);
         Assert.assertEquals(list.get(0), TariffsBuilderTestData.TARIFF);
     }

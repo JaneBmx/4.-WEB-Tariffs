@@ -6,16 +6,16 @@ import com.vlasova.builder.TariffTag;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TariffHandler extends DefaultHandler {
     private static final String TARIFF = "tariff";
-    private Set<Tariff> tariffs = new HashSet<>();
+    private List<Tariff> tariffs = new ArrayList<>();
     private Tariff current = null;
     private TariffTag currentTag = null;
 
-    public Set<Tariff> getTariffs() {
+    public List<Tariff> getTariffs() {
         return tariffs;
     }
 
