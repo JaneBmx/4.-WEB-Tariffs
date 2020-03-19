@@ -15,7 +15,6 @@ public class StAXTariffsBuilderTest {
         StAXTariffsBuilder stax = new StAXTariffsBuilder();
         stax.buildTariffs(TariffsBuilderTestData.FILE_NAME);
         List<Tariff> result = stax.getTariffs();
-        List<Tariff> list = new ArrayList<>(result);
-        Assert.assertEquals(list.get(0), TariffsBuilderTestData.TARIFF);
+        Assert.assertEquals(result.get(0), TariffsBuilderTestData.TARIFF);
     }
 }

@@ -38,7 +38,6 @@ public class StAXTariffsBuilder extends TariffsBuilder {
             }
         } catch (XMLStreamException e) {
             LOGGER.warn("StAX parser exception");
-            //TODO throw own exc
         } catch (FileNotFoundException e) {
             LOGGER.warn("File not found");
         } catch (IOException e) {

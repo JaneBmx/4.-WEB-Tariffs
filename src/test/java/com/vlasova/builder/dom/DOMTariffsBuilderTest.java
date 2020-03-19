@@ -15,7 +15,6 @@ public class DOMTariffsBuilderTest {
         DOMTariffsBuilder dom = new DOMTariffsBuilder();
         dom.buildTariffs(TariffsBuilderTestData.FILE_NAME);
         List<Tariff> result = dom.getTariffs();
-        List<Tariff> list = new ArrayList<>(result);
-        Assert.assertEquals(list.get(0), TariffsBuilderTestData.TARIFF);
+        Assert.assertEquals(result.get(0), TariffsBuilderTestData.TARIFF);
     }
 }

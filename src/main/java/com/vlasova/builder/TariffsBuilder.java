@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class TariffsBuilder {
-    protected static final int START_INDEX = 0;
     protected List<Tariff> tariffs;
 
     public TariffsBuilder() {

@@ -3,12 +3,14 @@ package com.vlasova.command;
 import com.vlasova.entity.Tariff;
 import com.vlasova.builder.TariffsBuilder;
 import com.vlasova.factory.CommandFactory;
+import com.vlasova.validator.XMLValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
