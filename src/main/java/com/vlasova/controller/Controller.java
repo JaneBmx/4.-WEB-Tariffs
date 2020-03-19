@@ -1,6 +1,6 @@
 package com.vlasova.controller;
 
-import com.vlasova.command.Command;
+import com.vlasova.command.redundant.ParsingCommand;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -24,8 +24,8 @@ public class Controller extends HttpServlet {
     }
 
     public void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Command command = new Command();
-        String page = command.execute(request);
+        ParsingCommand parsingCommand = new ParsingCommand();
+        String page = parsingCommand.execute(request);
         request.getRequestDispatcher(page).forward(request, response);
     }
 }
