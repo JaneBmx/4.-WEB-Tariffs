@@ -4,8 +4,8 @@ import com.vlasova.entity.Tariff;
 import com.vlasova.builder.TariffsBuilder;
 import com.vlasova.factory.CommandFactory;
 import com.vlasova.validator.XMLValidator;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//mport org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

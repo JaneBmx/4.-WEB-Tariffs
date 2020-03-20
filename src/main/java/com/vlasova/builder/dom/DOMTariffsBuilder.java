@@ -4,8 +4,6 @@ import com.vlasova.entity.Billing;
 import com.vlasova.entity.Tariff;
 import com.vlasova.builder.TariffTag;
 import com.vlasova.builder.TariffsBuilder;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

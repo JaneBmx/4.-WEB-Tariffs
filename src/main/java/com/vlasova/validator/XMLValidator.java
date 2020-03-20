@@ -1,7 +1,7 @@
 package com.vlasova.validator;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class XMLValidator {
-    private static final Logger LOGGER = LogManager.getLogger(XMLValidator.class);
+    //private static final Logger LOGGER = LogManager.getLogger(XMLValidator.class);
     private static final String SCHEMA_NAME = "src/main/resources/tariffs.xsd";
 
     public void validate(InputStream inputStream) {
@@ -30,7 +30,7 @@ public class XMLValidator {
             Source source = new StreamSource(inputStream);
             validator.validate(source);
         } catch (SAXException | IOException | NullPointerException e) {
-            LOGGER.warn("File is nod valid");
+           // LOGGER.warn("File is nod valid");
         }
     }
 }

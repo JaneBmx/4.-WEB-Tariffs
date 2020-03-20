@@ -36,6 +36,20 @@
     </tr>
 
     <c:forEach var="elem" items="${ list }" varStatus="status">
+<%--        <tr>--%>
+<%--            <td><c:out value="${ elem.id }"/></td>--%>
+<%--            <td><c:out value="${ elem.name }"/></td>--%>
+<%--            <td><c:out value="${ elem.operatorName }"/></td>--%>
+<%--            <td><c:out value="${ elem.payroll }"/></td>--%>
+<%--            <td><c:out value="${ elem.callPrices.insideNetworkPrice }"/></td>--%>
+<%--            <td><c:out value="${ elem.callPrices.outsideNetworkPrice }"/></td>--%>
+<%--            <td><c:out value="${ elem.callPrices.stationaryPhonePrice }"/></td>--%>
+<%--            <td><c:out value="${ elem.smsPrices.insideNetworkPrice }"/></td>--%>
+<%--            <td><c:out value="${ elem.smsPrices.outsideNetworkPrice}"/></td>--%>
+<%--            <td><c:out value="${ elem.parameters.countOfFavoriteNumbers }"/></td>--%>
+<%--            <td><c:out value="${ elem.parameters.billing.getValue() }"/></td>--%>
+<%--            <td><c:out value="${ elem.parameters.connectionFee }"/></td>--%>
+<%--        </tr>--%>
         <tr>
             <td><c:out value="${ elem.id }"/></td>
             <td><c:out value="${ elem.name }"/></td>
@@ -44,8 +58,8 @@
             <td><c:out value="${ elem.callPrices.insideNetworkPrice }"/></td>
             <td><c:out value="${ elem.callPrices.outsideNetworkPrice }"/></td>
             <td><c:out value="${ elem.callPrices.stationaryPhonePrice }"/></td>
-            <td><c:out value="${ elem.smsPrices.insideNetworkPrice }"/></td>
-            <td><c:out value="${ elem.smsPrices.outsideNetworkPrice}"/></td>
+            <td><c:out value="${ elem.smsPrice.getInsideNetworkPrice() }"/></td>
+            <td><c:out value="${ elem.smsPrice.getOutsideNetworkPrice()}"/></td>
             <td><c:out value="${ elem.parameters.countOfFavoriteNumbers }"/></td>
             <td><c:out value="${ elem.parameters.billing.getValue() }"/></td>
             <td><c:out value="${ elem.parameters.connectionFee }"/></td>

@@ -3,8 +3,8 @@ package com.vlasova.builder.stax;
 import com.vlasova.builder.TariffTag;
 import com.vlasova.entity.*;
 import com.vlasova.builder.TariffsBuilder;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
@@ -15,7 +15,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class StAXTariffsBuilder extends TariffsBuilder {
-    private static final Logger LOGGER = LogManager.getLogger(StAXTariffsBuilder.class);
+   // private static final Logger LOGGER = LogManager.getLogger(StAXTariffsBuilder.class);
     private static final String TARIFF = "tariff";
     private XMLInputFactory inputFactory = XMLInputFactory.newInstance();
 
@@ -37,11 +37,11 @@ public class StAXTariffsBuilder extends TariffsBuilder {
                 }
             }
         } catch (XMLStreamException e) {
-            LOGGER.warn("StAX parser exception");
+           // LOGGER.warn("StAX parser exception");
         } catch (FileNotFoundException e) {
-            LOGGER.warn("File not found");
+           // LOGGER.warn("File not found");
         } catch (IOException e) {
-            LOGGER.warn("IO exception");
+           // LOGGER.warn("IO exception");
         }
     }
 
@@ -83,7 +83,7 @@ public class StAXTariffsBuilder extends TariffsBuilder {
                 }
             }
         }
-        LOGGER.warn("Unknown element in tag tariff");
+       // LOGGER.warn("Unknown element in tag tariff");
         throw new XMLStreamException("Unknown element in tag tariff");
     }
 
@@ -125,7 +125,7 @@ public class StAXTariffsBuilder extends TariffsBuilder {
                 }
             }
         }
-        LOGGER.warn("Unknown element in tag callPrices.");
+       // LOGGER.warn("Unknown element in tag callPrices.");
         throw new XMLStreamException("Unknown element in tag callPrices.");
     }
 
@@ -157,7 +157,7 @@ public class StAXTariffsBuilder extends TariffsBuilder {
                 default:
             }
         }
-        LOGGER.warn("Unknown element in tag smsPrices.");
+       // LOGGER.warn("Unknown element in tag smsPrices.");
         throw new XMLStreamException("Unknown element in tag smsPrices.");
     }
 
@@ -191,7 +191,7 @@ public class StAXTariffsBuilder extends TariffsBuilder {
                 }
             }
         }
-        LOGGER.warn("Unknown element in tag parameters.");
+       // LOGGER.warn("Unknown element in tag parameters.");
         throw new XMLStreamException("Unknown element in tag parameters.");
     }
 }

@@ -4,8 +4,8 @@ import com.vlasova.builder.TariffsBuilder;
 import com.vlasova.builder.dom.DOMTariffsBuilder;
 import com.vlasova.builder.sax.SAXTariffsBuilder;
 import com.vlasova.builder.stax.StAXTariffsBuilder;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 
 public class CommandFactory {
     //private static final Logger LOGGER = LogManager.getLogger(CommandFactory.class);
