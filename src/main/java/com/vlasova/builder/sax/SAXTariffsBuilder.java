@@ -1,8 +1,7 @@
 package com.vlasova.builder.sax;
 
 import com.vlasova.builder.TariffsBuilder;
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
@@ -13,7 +12,7 @@ import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 
 public class SAXTariffsBuilder extends TariffsBuilder {
-  //  private static final Logger LOGGER = LogManager.getLogger(SAXTariffsBuilder.class);
+    private static final Logger LOGGER = Logger.getLogger(SAXTariffsBuilder.class);
     private TariffHandler handler = new TariffHandler();
     private XMLReader reader;
 
@@ -25,9 +24,9 @@ public class SAXTariffsBuilder extends TariffsBuilder {
             reader = parser.getXMLReader();
             reader.setContentHandler(handler);
         } catch (SAXException e) {
-          //  LOGGER.warn("SAX-parser exception");
+            LOGGER.warn("SAX-parser exception");
         } catch (ParserConfigurationException e) {
-           // LOGGER.warn("Parser configuration exception");
+            LOGGER.warn("Parser configuration exception");
         }
     }
 
@@ -36,9 +35,9 @@ public class SAXTariffsBuilder extends TariffsBuilder {
         try {
             reader.parse(fileName);
         } catch (SAXException e) {
-          //  LOGGER.warn("Exception with SAX-parser");
+            LOGGER.warn("Exception with SAX-parser");
         } catch (IOException e) {
-           // LOGGER.warn("Exception while working with the resource");
+            LOGGER.warn("Exception while working with the resource");
         }
         tariffs = handler.getTariffs();
     }
