@@ -11,36 +11,10 @@
     <title>
         Parsing XML
     </title>
-    <%--    <link rel="stylesheet" type="text/css" href="css/index_file_choose_style.css">--%>
     <link rel="stylesheet" type="text/css" href="css/index/hmm.css">
 </head>
 
 <body>
-<%--<div class="parent">--%>
-<%--    <div class="block">--%>
-<%--        <form action="controller" method="POST" enctype="multipart/form-data">--%>
-<%--            <input type="hidden" name="parsingCommand" value="parse"/>--%>
-<%--&lt;%&ndash;                <input type="file" name="file" id="upload" accept=".xml"/><br/>&ndash;%&gt;--%>
-<%--            <div class="example-1">--%>
-<%--                <div class="form-group">--%>
-<%--                    <label class="label">--%>
-<%--                        <i class="material-icons">Choose .xml file</i>--%>
-<%--                        <span class="title"></span>--%>
-<%--                        <input type="file" name="file" id="upload" accept=".xml">--%>
-<%--                    </label>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <br>--%>
-<%--            <label color="grey"> Insert parser type:--%>
-<%--                <input type="text" name="parser" size="10" color="grey"/><br/>--%>
-<%--            </label>--%>
-<%--            <br>--%>
-<%--            <input type="submit" value="OK" color="grey"/><br/>--%>
-<%--        </form>--%>
-<%--    </div>--%>
-<%--</div>--%>
-
-
 <form action="controller" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="parsingCommand" value="parse"/>
     <div class="example-1">
