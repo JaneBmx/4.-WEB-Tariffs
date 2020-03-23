@@ -1,7 +1,6 @@
 package com.vlasova.command;
 
 public enum PageEnum {
-    WELCOME_PAGE("/index.jsp"),
     RESULT("/result.jsp"),
     ERROR("/error_page.jsp");
 
@@ -11,7 +10,7 @@ public enum PageEnum {
         this.path = path;
     }
 
-    public String getValue(){
+    public String getValue() {
         return path;
     }
 }

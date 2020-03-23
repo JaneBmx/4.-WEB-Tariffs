@@ -11,10 +11,8 @@
 <html>
 <head>
     <title>Parsing results</title>
-<%--    <link rel="stylesheet" type="text/css" href="css/result/result_lazure.css">--%>
     <link rel="stylesheet" type="text/css" href="css/button/button.css">
     <link rel="stylesheet" type="text/css" href="css/result/table.css">
-    <script src="../../out/artifacts/XMLParse/css/result/table.js"></script>
 </head>
 
 <body>
