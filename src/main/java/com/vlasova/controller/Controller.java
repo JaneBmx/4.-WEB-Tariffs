@@ -27,8 +27,5 @@ public class Controller extends HttpServlet {
         ParsingCommand parsingCommand = new ParsingCommand();
         String page = parsingCommand.execute(request, response);
         request.getRequestDispatcher(page).forward(request, response);
-       // response.sendRedirect("/XMLParser_war_exploded" + page);
-
-
     }
 }

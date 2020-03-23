@@ -6,16 +6,7 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-<!--    <error-page>-->
-<!--        <location>/error_page.jsp</location>-->
-<!--    </error-page>-->
-
-<!--    <servlet>-->
-<!--        <servlet-name>controller</servlet-name>-->
-<!--        <servlet-class>com.vlasova.controller.Controller</servlet-class>-->
-<!--    </servlet>-->
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>controller</servlet-name>-->
-<!--        <url-pattern>/result</url-pattern>-->
-<!--    </servlet-mapping>-->
+    <error-page>
+        <location>/error_page.jsp</location>
+    </error-page>
 </web-app>

@@ -10,11 +10,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Error</title>
+    <link rel="stylesheet" type="text/css" href="css/error/err.css">
 </head>
-
 <body>
-<h1>Opps</h1>
-<h3>Something were wrong</h3>
-<a href="index.jsp">Back to main page</a>
+<div id="clouds">
+    <div class="cloud x1"></div>
+    <div class="cloud x1_5"></div>
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+</div>
+<div class='c'>
+    <div class='_404'>Ooops</div>
+    <hr>
+    <div class='_1'>something</div>
+    <div class='_2'>were wrong</div>
+    <a class='btn' href="index.jsp">back to main</a>
+</div>
 </body>
 </html>
