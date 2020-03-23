@@ -20,8 +20,8 @@ public class CommandFactory {
             case "STAX":
                 return new StAXTariffsBuilder();
             default:
-                //LOGGER.info("Unknown parserType. Will be used default");
-                return new DOMTariffsBuilder();
+                //LOGGER.info("Unknown parserType");
+                return new StAXTariffsBuilder();
         }
     }
 }

@@ -12,6 +12,7 @@
         Parsing XML
     </title>
     <link rel="stylesheet" type="text/css" href="css/index/hmm.css">
+    <link rel="stylesheet" type="text/css" href="css/button/button.css">
 </head>
 
 <body>
@@ -19,9 +20,7 @@
     <input type="hidden" name="parsingCommand" value="parse"/>
     <div class="example-1">
         <div class="form-group">
-
             <div class="container">
-
                 <ul>
                     <li>
                         <label class="label">
@@ -55,10 +54,9 @@
                             <div class="inside"></div>
                         </div>
                     </li>
+                    <li></li>
                     <li>
-                        <div class="btn btn-3">
-                            <input type="submit" value="OK"/><br/>
-                        </div>
+                        <input type="submit" value="OK"/><br/>
                     </li>
                 </ul>
             </div>

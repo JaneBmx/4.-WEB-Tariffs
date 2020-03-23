@@ -2,6 +2,7 @@ package com.vlasova.validator;
 
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
+import com.vlasova.exception.ValidateXMLException;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;

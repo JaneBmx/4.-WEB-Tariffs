@@ -9,7 +9,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-
+//import org.apache.log4j.Logger;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -17,7 +17,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 
 public class DOMTariffsBuilder extends TariffsBuilder {
-   // private static final Logger LOGGER = LogManager.getLogger(DOMTariffsBuilder.class);
+    //private static final Logger LOGGER = Logger.getLogger(DOMTariffsBuilder.class);
     private DocumentBuilder docBuilder;
 
     public DOMTariffsBuilder() {
@@ -26,7 +26,7 @@ public class DOMTariffsBuilder extends TariffsBuilder {
             factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
             docBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-         //   LOGGER.warn("Parser configuration error");
+            //LOGGER.warn("Parser configuration error");
         }
     }
 
@@ -44,9 +44,9 @@ public class DOMTariffsBuilder extends TariffsBuilder {
                 tariffs.add(tariff);
             }
         } catch (IOException e) {
-          //  LOGGER.warn("File error or IO error", e);
+            //  LOGGER.warn("File error or IO error", e);
         } catch (SAXException e) {
-          //  LOGGER.warn("Parsing failure", e);
+            //  LOGGER.warn("Parsing failure", e);
         }
     }
 

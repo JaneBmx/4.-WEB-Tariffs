@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <title>Error</title>
     <link rel="stylesheet" type="text/css" href="css/error/err.css">
+    <link rel="stylesheet" type="text/css" href="css/button/button.css">
 </head>
 <body>
 <div id="clouds">
@@ -26,7 +27,7 @@
     <hr>
     <div class='_1'>something</div>
     <div class='_2'>were wrong</div>
-    <a class='btn' href="index.jsp">back to main</a>
+    <a href="index.jsp">Back to main page</a>
 </div>
 </body>
 </html>
