@@ -10,7 +10,6 @@
 
     <properties>
         <log4j2.version>2.12</log4j2.version>
-        <disruptor.version>3.3.6</disruptor.version>
         <servlet-api.version>2.5</servlet-api.version>
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
         <jstl.version>1.2</jstl.version>
